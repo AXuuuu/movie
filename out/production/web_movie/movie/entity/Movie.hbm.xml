@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="movie.entity.Movie" table="movie" schema="web">
+        <id name="id" column="id" type="java.lang.String" length="255"/>
+        <property name="title" column="title" type="java.lang.String" length="255"/>
+        <property name="img" column="img" type="java.lang.String" length="255"/>
+        <property name="type" column="type" type="java.lang.String" length="255"/>
+        <property name="introduction" column="introduction" type="java.lang.String" length="255"/>
+        <property name="src" column="src" type="java.lang.String" length="255"/>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="movie.entity.News" table="news" schema="web">
+        <id name="id" column="id" type="java.lang.String" length="255"/>
+        <property name="title" column="title" type="java.lang.String" length="255"/>
+        <property name="content" column="content" type="java.lang.String" length="10000"/>
+    </class>
+</hibernate-mapping>
